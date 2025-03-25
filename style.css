@@ -1,0 +1,129 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    color: #fff;
+    background-color: #f4f4f4;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* Шапка */
+.header {
+    width: 100%;
+    height: auto; 
+    background-color: #0268BD;
+    box-shadow: 0 4px 4px rgba(0, 4, 4, 0.361);
+    padding: 0;
+}
+
+.header .container {
+    align-items: center;
+    display: flex;
+    margin: 0 auto;
+    padding: 10px 60px;
+    gap: 150px;
+    justify-content: space-between;
+}
+
+.header_logo img {
+    width: 100px;
+    height: 100px;
+}
+
+.header_account{
+    width: 80px;
+    height: 80px;
+}
+
+.header_menu {
+    display: flex;
+    align-items: center;
+    gap: 35px; 
+}
+
+.header_menu li a {
+    font-size: 32px;
+    transition: color 0.3s ease; 
+}
+
+.header_menu li a:hover {
+    color: #ffcc00; 
+}
+
+.sub_menu{
+    background-color: #004F92;
+    padding: 10px 20px;
+}
+
+.sub_menu ul{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    font-size: 32px;
+}
+
+.sub_menu ul a:hover{
+    color: #ffcc00;
+}
+
+/*Главная страница*/
+
+.glav .container{
+    display: flex;
+    margin: 0 auto;
+    padding: 0px 60px;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.glav{
+    min-height: 100vh;
+    background-image: url(glav_photo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.glav_title{
+    font-family: 'Rubik Mono One';
+    font-size: 80px;
+    padding: 260px 0px 150px 0px;
+}
+
+.glav_button{
+    color: #0268BD;
+    font-family:'Rubik Mono One';
+    font-size: 55px;
+
+    
+    background: white;
+    border-radius: 8px;
+    padding: 30px 30px;
+
+   justify-content: center;
+
+    transition: background-color 0.3s ease;
+}
+
+.glav_button:hover {
+    background-color: #eaeaea;
+}
+
+.glav_light{
+    background: #0268BD;
+    width: 770px;
+    height: 200px;
+    border-radius: 8px;
+}
