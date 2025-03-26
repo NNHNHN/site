@@ -1,6 +1,6 @@
 /* Общие стили */
 * {
-    box-sizing: border-box;
+        
     margin: 0;
     padding: 0;
 }
@@ -91,7 +91,9 @@ ul {
 .banner {
     height: 1200px;
     padding-inline: 60px;
-    background-image: url('glav_photo.jpg');
+    background-image: url('./image/glav_photo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .banner-block {
@@ -115,16 +117,182 @@ ul {
 
 .banner-title-bottom {
     padding: 10px;
-    background-color: #004F92;
+    background-color: #0268BD;
+    border-radius: 8px;
 }
 
 .banner-button {
+    border-radius: 8px;
     padding: 30px;
     background-color: #fff;
-    color: #004F92;
+    color: #0268BD;
     font-size: 55px;
     font-family: 'Rubik Mono One';
     text-transform: uppercase;
+}
+
+/*Карточки*/
+
+.card-list {
+    display: flex;  
+    gap: 20px;
+    justify-content: space-between;
+    padding: 115px; 
+    padding-inline: 60px;
+  }
+
+.card{
+  position: relative;
+  width: 400px; 
+  height: 400px;
+  overflow: hidden; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 18px;
+}
+
+.text-overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #0268BD;
+    color: white; 
+    padding: 10px; 
+    text-align: center; 
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.text-overlay a:hover{
+    color: #c8c8c8;
+}
+
+/*Слайдер*/
+
+.com_slider{
+        margin: 0 auto;
+        padding: 10px 60px;
+        text-align: center;
+}
+
+.slider_text{
+    font-family: 'Rubik Mono One';
+    font-size:32px;
+    color: #0268BD;
+    padding-bottom: 80px;
+}
+
+.knopochki{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding-bottom: 80px;
+}
+
+.option-active{
+    background: #0268BD;
+    width: 220px;
+    height: 80px;
+    font-family: 'Nunito';
+    font-size: 36px;
+    color: #fff;
+    border: none;
+}
+
+.option{
+    width: 220px;
+    height: 80px;
+   font-size: 16px;
+   font-weight: bold;
+   border: 3px solid #0268BD;
+   background-color: #fff;
+   color: #0268BD;
+   font-family: 'Nunito';
+   font-size: 36px;
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation-image{
+    cursor: pointer;
+}
+
+/*Информация с подробно*/
+
+.info{
+    background-image: url(./image/infoblue.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+    padding:0px 60px 0px 60px;
+    margin: 100px 0px 50px 0px;
+}
+
+/*Все для вашего удобства*/
+
+.comfort{
+    padding: 100px 60px 100px 60px;
+}
+
+.comfort h2{
+    font-family: 'Rubik Mono One';
+    font-size:32px;
+    color: #0268BD;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.comfort-all{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 100px;
+    justify-content: space-between;
+
+}
+
+.comfort_title{
+    color: #000;
+    font-size: 18px;
+}
+
+.comfort_subtitle{
+    color: #000;
+    font-size: 24px;
+    font-family: 'Nunito';
+}
+
+/*Услуги*/
+
+.services{
+    padding: 50px 60px 50px 60px;
+}
+
+.services h2{
+    font-family: 'Rubik Mono One';
+    font-size: 55px;
+    color: #0268BD;
+    padding: 0px 0px 35px 0px;
+}
+
+.services-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 30px;
+}
+
+.services-img{
+    border-radius: 32px;
+    transition: transform 0.5s ease;
+}
+
+.services-img:hover{
+    transform:scale(1.05);
 }
 
 /* Футер */
@@ -133,3 +301,4 @@ footer {
     height: 200px;
     background-color: #222222;
 }
+
